@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <!-- WizardPager -->
+    <dimen name="step_pager_tab_width">32dp</dimen>
+    <dimen name="step_pager_tab_height">3dp</dimen>
+    <dimen name="step_pager_tab_spacing">4dp</dimen>
+    <!-- SuperToast -->
+    <dimen name="toast_hover">64dp</dimen>
+    <dimen name="buttontoast_hover">24dp</dimen>
+    <dimen name="buttontoast_x_padding">12dp</dimen>
+    <dimen name="cardtoast_margin">4dp</dimen>
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- SweetDialog -->
+    <style name="alert_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="@android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+    <!-- 新QuickAction styles -->
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- WizardViewpager -->
+    <style name="WizardPageContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WizardPageTitle">
+        <item name="android:id">@android:id/title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:paddingLeft">?android:attr/listPreferredItemPaddingLeft</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#ff0099cc</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-thin</item>
+    </style>
+
+    <style name="WizardFormLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps" tools:targetApi="ice_cream_sandwich">true</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+    <!-- SuperToast -->
+    <style name="DefaultText">
+        <item name="android:text">Default</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="DefaultRootLayout">
+        <item name="android:background">@drawable/background_standard_gray</item>
+    </style>
+
+    <!-- Styles for BUTTON type SuperActivityToasts -->
+
+    <style name="SuperActivityToast_Button_RootLayout" parent="DefaultRootLayout">
+        <item name="android:layout_marginBottom">@dimen/buttontoast_hover</item>
+        <item name="android:layout_marginLeft">@dimen/buttontoast_x_padding</item>
+        <item name="android:layout_marginRight">@dimen/buttontoast_x_padding</item>
+    </style>
+
+    <style name="SuperActivityToast_Button_TextView" parent="DefaultText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <style name="SuperActivityToast_Button_Divider">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="SuperActivityToast_Button_Button">
+        <item name="android:background">@drawable/selector_undobutton</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <!-- Styles for PROGRESS type SuperActivityToasts -->
+
+    <style name="SuperActivityToast_Progress_ProgressBar" parent="android:Widget.Holo.ProgressBar" tools:targetApi="honeycomb">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="SuperActivityToast_Progress_TextView" parent="DefaultText">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Styles for PROGRESS_HORIZONTAL type SuperActivityToasts -->
+
+    <style name="SuperActivityToast_ProgressHorizontal_RootLayout" parent="DefaultRootLayout">
+        <item name="android:minWidth">128dp</item>
+    </style>
+
+    <style name="SuperActivityToast_ProgressHorizontal_TextView" parent="DefaultText">
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="SuperActivityToast_ProgressHorizontal_ProgressBar" parent="android:Widget.Holo.ProgressBar.Horizontal" tools:targetApi="honeycomb">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <!-- Styles for BUTTON type SuperCardToasts -->
+
+    <style name="SuperCardToast_Button_RootLayout" parent="DefaultRootLayout">
+        <item name="android:background">@drawable/selector_undobutton</item>
+    </style>
+
+    <!-- SwipeBack -->
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+</resources>
